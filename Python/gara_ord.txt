@@ -1,0 +1,8 @@
+Adriana 1
+Andrea 3
+Ettore 1
+Giulia 3
+Luca 8
+Marco 0
+Maria 5
+Vito 5
