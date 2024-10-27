@@ -1,3 +1,4 @@
+/*
 void main(){
   final MarioRossi = Persona.Uomo("Mario","Rossi",21,175,60,);
   final LucaPalermo = Persona.Uomo("Luca","Palermo",51,175,60,);
@@ -54,4 +55,4 @@ int get eta => _eta;
 static int differenzaeta (int eta1,int eta2) => (eta1-eta2).abs();
 
 
-}
+}*/

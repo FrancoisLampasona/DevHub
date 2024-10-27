@@ -1,6 +1,6 @@
-import 'Classi.dart';
+/* import 'Classi.dart';
 
-void main(){
+void main() {
   final MarioRossi = Persona.Uomo(
     "Mario",
     "Rossi",
@@ -9,12 +9,11 @@ void main(){
     60,
   );
 
-print(MarioRossi);
-print(Sex.values);
-
+  print(MarioRossi);
+  print(Sex.values);
 }
 
-enum Sex {M,F}
+enum Sex { M, F }
 
 class Persona {
   String _nome;
@@ -29,31 +28,28 @@ class Persona {
     this._cognome,
     this._eta,
     this._altezza,
-    this._peso,
-    [this._sesso,]
-  );
+    this._peso, [
+    this._sesso,
+  ]);
 
-  Persona.Uomo (
+  Persona.Uomo(
     this._nome,
     this._cognome,
     this._eta,
     this._altezza,
     this._peso,
-  ): _sesso = Sex.M ;
+  ) : _sesso = Sex.M;
 
-  Persona.Donna (
+  Persona.Donna(
     this._nome,
     this._cognome,
     this._eta,
     this._altezza,
     this._peso,
-  ) : _sesso = Sex.F ;
+  ) : _sesso = Sex.F;
 
-void cammina () => print ("Che bella passeggiata !");
-void parla () => print("Sono un pò pazzo");
-void mangia () => print("Che buona questa carbonara!");
-
-
-
-
+  void cammina() => print("Che bella passeggiata !");
+  void parla() => print("Sono un pò pazzo");
+  void mangia() => print("Che buona questa carbonara!");
 }
+*/

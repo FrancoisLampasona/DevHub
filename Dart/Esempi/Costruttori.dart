@@ -1,4 +1,4 @@
-
+/*
 void main() {
 
 final MarioRossi = Persona("Mario","Rossi",27,178,60,);
@@ -94,4 +94,4 @@ Peso : $_peso
 Sesso : $_sesso
 ''';
 
-}
+}*/
