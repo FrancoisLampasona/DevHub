@@ -1,0 +1,31 @@
+/*Esercizio 1
+Definire una funzione che accetta un callback e lo richiama:*/
+
+function eseguiCallback(callback) {
+    callback();
+  }
+  
+  function mioCallback() {
+    console.log("Eseguo il callback!");
+  }
+  
+  eseguiCallback(mioCallback);
+
+/*Esercizio 2
+Definire una funzione che accetta un valore e un callback, e richiama il callback passando il valore come argomento:*/
+/*Esercizio 3
+Simulare una chiamata asincrona utilizzando un setTimeout e un callback:*/
+/*Esercizio 4
+Definire una funzione che accetta un array e un callback, e richiama il callback per ogni elemento dell'array:*/
+/*Esercizio 5
+Utilizzare un callback per ordinare un array di oggetti:*/
+/*Esercizio 6
+Utilizzare un callback per filtrare gli elementi di un array:*/
+/*Esercizio 7
+Utilizzare un callback per calcolare la somma degli elementi di un array:*/
+/*Esercizio 8
+Utilizzare un callback per mappare gli elementi di un array a nuovi valori:*/
+/*Esercizio 9
+Utilizzare un callback per eseguire un'azione su ogni carattere di una stringa:*/
+/*Esercizio 10
+Utilizzare un callback per simulare la gestione degli errori in una finta chiamata asincrona:*/
