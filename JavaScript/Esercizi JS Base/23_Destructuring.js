@@ -39,11 +39,18 @@ const persona = {
 const { nome: nomePersona, eta: anni, città: cittàPersona } = persona;
 
 console.log(nomePersona);
-console.log(anni); 
-console.log(cittàPersona); 
+console.log(anni);
+console.log(cittàPersona);
 
 /*Esercizio 5: Destructuring di Parametri di Funzione
 Utilizzare il destructuring per estrarre i parametri di un oggetto passato a una funzione.*/
+
+const destrFunction = function (persona) {
+  const { nome, eta, città } = persona;
+  return `Nome: ${nome}, Anno: ${eta}, Città: ${città}`;
+};
+
+console.log("Vediamooo : " + destrFunction(persona));
 
 /*Esercizio 6: Destructuring con Valori Predefiniti
 Utilizzare il destructuring per estrarre i valori di un oggetto con valori predefiniti per le variabili.*/
