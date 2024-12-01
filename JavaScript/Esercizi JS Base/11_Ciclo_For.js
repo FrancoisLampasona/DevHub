@@ -49,8 +49,44 @@ for (let i = 0; i < numero_n; i++) {
 /*Esercizio 6
 Scrivi un programma che prenda un numero N in input e stampi una piramide di asterischi con N righe.*/
 
+let N = 9;
+let j = 0;
+let asterisco = "*";
+
+for (let i = 0; i < N / 2; i++) {
+  asterisco = "";
+
+  for (let k = 0; k < i; k++) {
+    asterisco += " ";
+  }
+
+  for (; j < N - i; j++) {
+    asterisco += "*";
+  }
+
+  j = i + 1;
+
+  console.log(asterisco);
+}
+
 /*Esercizio 7
 Scrivi un programma che calcoli la media di un array di numeri utilizzando un ciclo for.*/
 
+const ArrayNumerico = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+let somma = 0;
+
+for (let i = 0; i < ArrayNumerico.length; i++) {
+  somma += ArrayNumerico[i];
+}
+
+console.log("Somma totale:", somma);
+console.log("Media:", somma / ArrayNumerico.length);
+
 /*Esercizio 8
 Scrivi un programma che prenda una stringa in input e stampi i caratteri della stringa, uno per riga.*/
+
+const inputString = "Ciao";
+
+for (let i = 0; i < inputString.length; i++) {
+  console.log(inputString[i]);
+}
