@@ -55,8 +55,49 @@ console.log("Vediamooo : " + destrFunction(persona));
 /*Esercizio 6: Destructuring con Valori Predefiniti
 Utilizzare il destructuring per estrarre i valori di un oggetto con valori predefiniti per le variabili.*/
 
+const animaleObject = {
+  cane: "Bau",
+  gatto: "Miao",
+  gallina: "Cocode",
+};
+
+const { cane, gatto, gallina } = animaleObject;
+console.log(cane);
+console.log(gatto);
+console.log(gallina);
+
 /*Esercizio 7: Destructuring di Array Annidati
 Utilizzare il destructuring per estrarre i valori da un array annidato.*/
 
+const numeri2 = [1, [2, 3], 4, 5];
+
+// Destructuring di array annidato
+const [primo2, [secondo2, terzo2], quarto2] = numeri2;
+
+console.log(primo); // 1
+console.log(secondo); // 2
+console.log(terzo); // 3
+console.log(quarto); // 4
+
 /*Esercizio 8: Destructuring di Oggetti Annidati
 Utilizzare il destructuring per estrarre i valori da un oggetto annidato.*/
+
+const persona2 = {
+  nome2: "Mario",
+  eta: 30,
+  indirizzo: {
+    città: "Roma",
+    via: "Via Roma",
+    numero: 10,
+  },
+};
+
+const {
+  nome2,
+  indirizzo: { città, via, numero },
+} = persona2;
+
+console.log(nome2); // Mario
+console.log(città); // Roma
+console.log(via); // Via Roma
+console.log(numero); // 10

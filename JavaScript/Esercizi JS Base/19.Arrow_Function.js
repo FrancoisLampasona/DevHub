@@ -43,6 +43,12 @@ console.log("Area del triangolo:", calcolaAreaTriangolo(5, 3));
 
 Scrivi una arrow function che prenda una parola come parametro e restituisca true se la parola è palindroma, altrimenti restituisca false.*/
 
+const palindroma = (parola) =>
+  parola === parola.split("").reverse().join("") ? true : false;
+
+console.log(palindroma("anna")); // Output: true
+console.log(palindroma("ciao")); // Output: false
+
 /*Esercizio 7
 
 Scrivi una arrow function che prenda un parametro numerico e restituisca il cubo del numero.*/
