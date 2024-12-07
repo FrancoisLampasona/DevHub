@@ -53,9 +53,55 @@ let variabile;
 const risultato_5 = typeof variabile !== "undefined" ? "definita" : "undefined";
 console.log("La variabile è:", risultato);
 
-/*Esercizio 8
-Scrivi un codice che prenda un numero e un intervallo come input e verifichi se il numero è compreso nell'intervallo utilizzando l'operatore ternario.*/
+// Esercizio 8: Verifica se un numero è compreso in un intervallo
+function verificaIntervallo(numero, intervalloMin, intervalloMax) {
+  return numero >= intervalloMin && numero <= intervalloMax
+    ? `Il numero ${numero} è compreso nell'intervallo [${intervalloMin}, ${intervalloMax}]`
+    : `Il numero ${numero} NON è compreso nell'intervallo [${intervalloMin}, ${intervalloMax}]`;
+}
+
+// Esempio di utilizzo
+let numero2 = 5;
+let intervalloMin = 1;
+let intervalloMax = 10;
+console.log(verificaIntervallo(numero, intervalloMin, intervalloMax));
+
 /*Esercizio 9
 Scrivi un codice che prenda una variabile come input e verifichi se è di tipo stringa o numerica utilizzando l'operatore ternario.*/
+
+// Esercizio 9: Verifica se una variabile è stringa o numerica
+function verificaTipo(variabile) {
+  return typeof variabile === "string"
+    ? "La variabile è una stringa"
+    : typeof variabile === "number"
+    ? "La variabile è un numero"
+    : "La variabile non è né una stringa né un numero";
+}
+
+// Esempio di utilizzo
+let variabile2 = "ciao";
+console.log(verificaTipo(variabile));
+variabile = 42;
+console.log(verificaTipo(variabile));
+variabile = true;
+console.log(verificaTipo(variabile));
+
 /*Esercizio 10
 Scrivi un codice che prenda una variabile booleana come input e verifichi se è vera o falsa utilizzando l'operatore ternario.*/
+
+// Esercizio 10: Verifica se una variabile booleana è vera o falsa
+function verificaBooleano(variabile) {
+  return typeof variabile === "boolean"
+    ? variabile
+      ? "La variabile è vera"
+      : "La variabile è falsa"
+    : "La variabile non è un booleano";
+}
+
+// Esempio di utilizzo
+let variabileBooleana = true;
+console.log(verificaBooleano(variabileBooleana));
+variabileBooleana = false;
+console.log(verificaBooleano(variabileBooleana));
+variabileBooleana = 42;
+console.log(verificaBooleano(variabileBooleana));
