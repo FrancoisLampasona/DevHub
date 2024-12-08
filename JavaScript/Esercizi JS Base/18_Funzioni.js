@@ -15,7 +15,6 @@ areaRettangolo(base, altezza);
 Scrivi una funzione che prenda un parametro numero e restituisca true se il numero è pari, altrimenti restituisca false.
 */
 
-
 /*Esercizio 3
 Scrivi una funzione che prenda due parametri di tipo stringa e restituisca la loro concatenazione.
 */
@@ -46,3 +45,19 @@ Scrivi una funzione che prenda una stringa come parametro e restituisca il numer
 
 /*Esercizio 10
 Scrivi una funzione che prenda un array di numeri come parametro e restituisca la media di tutti gli elementi.*/
+
+const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const arrayFun = function (array) {
+  let sum = 0;
+  let index_sum = 0;
+  array.forEach((element, index) => {
+    sum += element;
+    index_sum = index;
+  });
+  index_sum++;
+  return sum / index_sum;
+};
+
+const media = arrayFun(numberArray);
+console.log("La media è : " + media);
