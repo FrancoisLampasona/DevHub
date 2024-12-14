@@ -46,7 +46,7 @@ Scrivi una funzione che prenda una stringa come parametro e restituisca il numer
 /*Esercizio 10
 Scrivi una funzione che prenda un array di numeri come parametro e restituisca la media di tutti gli elementi.*/
 
-const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numberArray = [1, 2, 3, 4, 5, 6, 8, 9];
 
 const arrayFun = function (array) {
   let sum = 0;
