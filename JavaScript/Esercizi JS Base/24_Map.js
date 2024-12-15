@@ -39,7 +39,7 @@ frasi = frasi.map((element) => element + "!");
 
 console.log(frasi);
 
-/*Esercizio 5: Calcolare il quadrato di ogni numero
+/*Esercizio 5: Calcolare il quadrato di ogni nmero
 Calcolare il quadrato di ogni numero in un array.*/
 
 const numeri = [1, 2, 3, 4];
