@@ -31,7 +31,7 @@ const nomi = persone.map((persona) => persona.nome);
 console.log(nomi);
 
 /*Esercizio 4: Aggiungere un punto esclamativo a ogni stringa
-Aggiungere un punto esclamativo alla fine di ogni stringa di un array.*/
+Aggiungere un punto esclamativo alla fine di ogni stringa di array.*/
 
 const frasi = ["Ciao", "Buongiorno", "Buonasera"];
 
