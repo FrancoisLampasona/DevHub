@@ -66,7 +66,9 @@ void ciaone({int ? eta}) => print("Ciaone");
 var a = "a";
 
 void f(){
+  // ignore: unused_element
   void g(){
+    // ignore: unused_element
     void h(){
       print(a);
     }
