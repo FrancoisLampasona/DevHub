@@ -77,6 +77,7 @@ public class Variabili {
 
     private static void esercizio_6() {
         double peso = 68.5;
+        System.out.println(peso);
     }
 
     /*
