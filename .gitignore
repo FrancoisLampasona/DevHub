@@ -1,0 +1,25 @@
+# File di sistema macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# File di sistema nascosti
+Icon?
+._*
+
+# File temporanei di editor
+*.swp
+*.swo
+*.tmp
+
+# Cartelle di backup
+*.bak
+*~
+
+# Log files
+*.log
+
+# Node / Python (se li usi)
+node_modules/
+__pycache__/
+
