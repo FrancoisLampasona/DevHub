@@ -1,6 +1,12 @@
 # Introduzion a Javascript
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png" hspace="100">
+<div style="text-align: center; margin: 0; padding: 0;">
+  <img 
+    src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1728,q_auto" 
+    style="height: 400px; max-width: 100%; display: block; margin: 0 auto;"
+    alt="JavaScript illustration">
+</div>
+
 
 ---
 
