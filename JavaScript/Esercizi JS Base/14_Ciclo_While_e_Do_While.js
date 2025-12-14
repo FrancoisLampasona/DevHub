@@ -33,7 +33,15 @@ while (numero<=10){
 /*Esercizio 4
 Scrivi un programma che prenda un numero in input e conti il numero di cifre presenti utilizzando il ciclo while.*/
 
+let numero_4 = 12345;
+let conteggioCifre = 0;
 
+while (numero_4 !== 0) {
+  numero_4 = Math.floor(numero_4 / 10);
+  conteggioCifre++;
+}
+
+console.log("Numero di cifre:", conteggioCifre);
 
 /*Esercizio 5
 Scrivi un programma che generi e stampi la sequenza di Fibonacci fino al numero 100 utilizzando il ciclo do while.*/
