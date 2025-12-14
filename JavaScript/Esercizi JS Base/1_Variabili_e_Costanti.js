@@ -9,7 +9,7 @@ console.log(numero);
 Dichiarare una costante chiamata "PI" e assegnarle il valore di 3.14. Stampare il valore della costante sulla console.
 */
 
-let PI = 3.14;
+const PI = 3.14;
 console.log(PI);
 
 /*Esercizio 3
@@ -17,7 +17,6 @@ Dichiarare una variabile chiamata "nome" e assegnarle il valore "Marco". Success
 */
 
 let nome = "Marco";
-console.log(nome);
 nome = "Luca";
 console.log(nome);
 
@@ -25,7 +24,7 @@ console.log(nome);
 Dichiarare una variabile chiamata "saluto" e assegnarle il valore "Ciao, come stai?". Stampare il valore della variabile sulla console.
 */
 
-let saluto = "Ciao, come stai ?";
+let saluto = "Ciao , come stai ?";
 console.log(saluto);
 
 /*Esercizio 5
@@ -39,16 +38,17 @@ console.log(vero);
 Dichiarare una variabile chiamata "numeri" e assegnarle un array contenente i numeri da 1 a 5. Stampare l'array sulla console.
 */
 
-let numeri = [1, 2, 3, 4, 5];
-console.log(numeri);
+let numeri = [1,2,3,4,5];
+console.log (numeri);
+
 
 /*Esercizio 7 (opzionale)
 Dichiarare una variabile chiamata "persona" e assegnarle un oggetto con le seguenti proprietà: "nome" (con valore "Mario") e "età" (con valore 30). Stampare l'oggetto sulla console.
 */
 
 let persona = {
-  nome: "Mario",
-  età: "30",
+    nome : "Mario",
+    eta: "30",
 };
 
 console.log(persona);

@@ -1,23 +1,11 @@
 /*Esercizio 1
 Scrivi un programma che stampi i numeri da 1 a 5 utilizzando il ciclo while.*/
 
-let i = 1;
-
-while (i <= 6) {
-  console.log(i++);
-}
 
 /*Esercizio 2
 Scrivi un programma che calcoli la somma dei numeri da 1 a 10 utilizzando il ciclo while.*/
 
-let sum = 0;
 
-while (i <= 10) {
-  sum += i;
-  i++;
-}
-
-console.log(sum);
 
 /*Esercizio 3
 Scrivi un programma che stampi i numeri pari da 2 a 10 utilizzando il ciclo do while.*/

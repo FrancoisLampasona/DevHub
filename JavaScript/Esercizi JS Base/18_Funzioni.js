@@ -2,14 +2,7 @@
 Scrivi una funzione che prenda due parametri, base e altezza, e restituisca l'area del rettangolo corrispondente.
 */
 
-const base = 10;
-const altezza = 12;
 
-const areaRettangolo = function (base, altezza) {
-  console.log(base * altezza);
-};
-
-areaRettangolo(base, altezza);
 
 /*Esercizio 2
 Scrivi una funzione che prenda un parametro numero e restituisca true se il numero è pari, altrimenti restituisca false.
