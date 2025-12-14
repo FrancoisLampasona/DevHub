@@ -1,6 +1,11 @@
 /*Esercizio 1
 Scrivi un programma che prenda un array di numeri e stampi ogni elemento.*/
 
+const numeri = [1, 2, 3, 4, 5];
+
+for (let numero of numeri ) {
+  console.log(numero);
+}
 
 /*Esercizio 2
 Scrivi un programma che prenda una stringa in input e stampi ogni lettera della stringa.*/
@@ -42,3 +47,14 @@ Scrivi un programma che prenda un array di numeri e calcoli la media di tutti gl
 /*Esercizio 10
 Scrivi un programma che prenda una stringa e conti il numero di vocali presenti.*/
 
+const vocali = "aeiou";
+const str_10 = "pianocane";
+let count = 0;
+
+for (let lettera of str_10) {
+  if (vocali.includes(lettera)) {
+    count++;
+  }
+}
+
+console.log(count);
