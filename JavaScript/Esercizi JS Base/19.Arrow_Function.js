@@ -62,9 +62,22 @@ console.log("Cubo:", cubo(2));
 
 Scrivi una arrow function che prenda due parametri numerici, minimo e massimo, e restituisca un numero casuale compreso tra il valore minimo e il valore massimo.*/
 
+const generaNumeroCasuale = (minimo, massimo) =>
+  Math.floor(Math.random() * (massimo - minimo + 1)) + minimo;
+
+console.log("Numero casuale:", generaNumeroCasuale(1, 10));
+
 /*Esercizio 9
 
 Scrivi una arrow function che prenda un array di stringhe come parametro e restituisca la concatenazione di tutti gli elementi dell'array.*/
 
+const concatenazioneArray = (array) => array.join("");
+
+console.log("Risultato:", concatenazioneArray(["Ciao", "Mondo", "!"]));
+
 /*Esercizio 10
 Scrivi una arrow function che prenda due parametri, una parola e una lunghezza, e restituisca true se la parola è più lunga della lunghezza specificata, altrimenti restituisca false.*/
+
+const isParolaPiuLunga = (parola, lunghezza) => parola.length > lunghezza;
+
+console.log("La parola è più lunga?", isParolaPiuLunga("JavaScript", 5));
