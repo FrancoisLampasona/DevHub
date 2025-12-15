@@ -18,7 +18,9 @@ console.log(quadrato(5));
 
 Scrivi una arrow function che prenda un parametro numerico e restituisca true se il numero è positivo, altrimenti restituisca false.*/
 
+const segno = (x) => ( x > 0 ? true : false);
 
+console.log(segno(2))
 
 /*Esercizio 4
 
