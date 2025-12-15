@@ -64,8 +64,21 @@ Scrivi un programma che prenda un array e inverta l'ordine degli elementi.*/
 /*Esercizio 9
 Scrivi un programma che prenda un array di stringhe e calcoli la lunghezza media delle stringhe presenti.*/
 
+const array_9 = ["ciao", "salve", "buongiorno", "arrivederci"];
+let lunghezzaTotale = 0;
 
+for (let stringa of array_9) {
+  lunghezzaTotale += stringa.length;
+}
+
+const lunghezzaMedia = lunghezzaTotale / array_9.length;
+
+console.log("Lunghezza media delle stringhe:", lunghezzaMedia);
 
 /*Esercizio 10
 Scrivi un programma che prenda un array di parole e unisca tutti gli elementi in una singola stringa separati da uno spazio.*/
 
+const array_10 = ["Ciao", "come", "stai?"];
+const stringaUnita = array_10.join(" ");
+
+console.log("Stringa unita:", stringaUnita);
