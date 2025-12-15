@@ -45,6 +45,9 @@ console.log("Numero di cifre:", conteggioCifre);
 
 /*Esercizio 5
 Scrivi un programma che generi e stampi la sequenza di Fibonacci fino al numero 100 utilizzando il ciclo do while.*/
+
+
+
 /*Esercizio 6
 Scrivi un programma che prenda un numero in input e conti il numero di cifre pari presenti utilizzando il ciclo while.*/
 /*Esercizio 7
