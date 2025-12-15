@@ -32,3 +32,17 @@ while (i < numeri_3.length) {
   console.log(numeri_3[i]);
   i++;
 }
+
+/* Esercizio 4
+Saltare l'iterazione di un ciclo while quando un certo valore viene trovato. */
+
+let i_4 = 0;
+const numeri_4 = [1, 2, 3, 4, 5];
+while (i_4 < numeri_4.length) {
+  if (numeri_4[i_4] === 3) {
+    i_4++;
+    continue;
+  }
+  console.log(numeri_4[i_4]);
+  i_4++;
+}
