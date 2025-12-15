@@ -2,12 +2,17 @@
 Scrivi una arrow function che prenda due parametri numerici e restituisca la loro somma.
 */
 
+const somma = (a,b) => (a+b);
+
+console.log(somma(2,3));
 
 /*Esercizio 2
 
 Scrivi una arrow function che prenda un parametro numerico e restituisca il quadrato del numero.*/
 
+const quadrato = (x) => (x**2);
 
+console.log(quadrato(5));
 
 /*Esercizio 3
 
