@@ -19,3 +19,16 @@ for (let i = 0; i < numeri_2.length; i++) {
   }
   console.log(numeri_2[i]);
 }
+
+/*Esercizio 3
+Interrompere un ciclo while quando un certo valore viene trovato.*/
+
+let i = 0;
+const numeri_3 = [1, 2, 3, 4, 5];
+while (i < numeri_3.length) {
+  if (numeri_3[i] === 3) {
+    break;
+  }
+  console.log(numeri_3[i]);
+  i++;
+}
