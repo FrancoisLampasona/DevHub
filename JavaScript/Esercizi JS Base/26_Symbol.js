@@ -1,5 +1,13 @@
 /*Esercizio 1: Iteratore Semplice
 Creare un iteratore semplice che iteri su un array di numeri.*/
+
+const mySymbol = Symbol("mySymbol");
+const obj = {
+  [mySymbol]: "valore associato al simbolo",
+};
+
+console.log(obj[mySymbol]); 
+
 /*Esercizio 2: Iteratore Personalizzato
 Creare un iteratore personalizzato per un oggetto.*/
 /*Esercizio 3: Iterare su una Stringa
