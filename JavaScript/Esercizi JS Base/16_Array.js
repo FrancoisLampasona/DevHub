@@ -56,10 +56,19 @@ Scrivi un programma che prenda un array con elementi duplicati e restituisca un 
 /*Esercizio 7
 Scrivi un programma che prenda un array di stringhe e un elemento di ricerca e restituisca l'indice della prima occorrenza dell'elemento nell'array.*/
 
+const array_7 = ["mela", "banana", "arancia", "pera"];
+const elementoDiRicerca = "banana";
+const indice = array_7.indexOf(elementoDiRicerca);
+
+console.log("Indice di", elementoDiRicerca, "nell'array:", indice);
 
 /*Esercizio 8
 Scrivi un programma che prenda un array e inverta l'ordine degli elementi.*/
 
+const array = [1, 2, 3, 4, 5];
+const arrayInvertito = array.reverse();
+
+console.log("Array invertito:", arrayInvertito);
 
 /*Esercizio 9
 Scrivi un programma che prenda un array di stringhe e calcoli la lunghezza media delle stringhe presenti.*/
