@@ -54,6 +54,10 @@ console.log("La parola è palindroma?", isParolaPalindroma("radar"));
 
 Scrivi una arrow function che prenda un parametro numerico e restituisca il cubo del numero.*/
 
+const cubo = (numero) => numero ** 3;
+
+console.log("Cubo:", cubo(2));
+
 /*Esercizio 8
 
 Scrivi una arrow function che prenda due parametri numerici, minimo e massimo, e restituisca un numero casuale compreso tra il valore minimo e il valore massimo.*/
