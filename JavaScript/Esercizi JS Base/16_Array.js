@@ -41,15 +41,34 @@ console.log(min);
 /*Esercizio 4
 Scrivi un programma che prenda un array di numeri e restituisca un nuovo array contenente solo i numeri pari.*/
 
+const array_4 = [1,5,3,2,7];
+const numeriPari = [];
+
+for (let x of array_4) {
+    if (x % 2 === 0) numeriPari.push(x);
+}
+
+console.log("Numeri pari:", numeriPari);
 
 
 /*Esercizio 5
 Scrivi un programma che prenda due array e restituisca un nuovo array che contenga tutti gli elementi dei due array concatenati.*/
 
+const arrayA = [1, 2, 3];
+const arrayB = [4, 5, 6];
+const arrayConcatenato = arrayA.concat(arrayB);
+
+console.log("Array concatenati:", arrayConcatenato);
+
 
 
 /*Esercizio 6
 Scrivi un programma che prenda un array con elementi duplicati e restituisca un nuovo array con i duplicati rimossi.*/
+
+const array_6 = [1, 2, 2, 3, 4, 4, 5];
+const arraySenzaDuplicati = [...new Set(array_6)];
+
+console.log("Array senza duplicati:", arraySenzaDuplicati);
 
 
 
