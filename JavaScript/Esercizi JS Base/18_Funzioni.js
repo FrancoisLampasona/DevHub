@@ -32,6 +32,20 @@ console.log(concatena_Str("ciao", "cane"));
 Scrivi una funzione che prenda un parametro numero e restituisca il suo fattoriale.
 */
 
+function calcolaFattoriale(numero) {
+  let fattoriale = 1;
+
+  for (let i = 1; i <= numero; i++) {
+    fattoriale *= i;
+  }
+
+  return fattoriale;
+}
+
+const numero = 5;
+const fattoriale = calcolaFattoriale(numero);
+
+console.log("Il fattoriale di", numero, "è:", fattoriale);
 
 /*Esercizio 5
 Scrivi una funzione che generi un numero casuale compreso tra un valore minimo e un valore massimo.
