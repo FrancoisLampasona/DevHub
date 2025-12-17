@@ -54,7 +54,7 @@ Verifica se l'oggetto "persona" ha la proprietà "sesso" e stampa un messaggio a
 
 console.log("sesso" in persona)
 console.log(persona.hasOwnProperty("sesso"));
-console.log(persona.hasOwn(persona,"sesso"));
+console.log(Object.hasOwn(persona,"sesso"));
 
 /*Esercizio 8
 Crea una copia dell'oggetto "persona" in un nuovo oggetto "personaCopia" e stampa entrambi gli oggetti in console.
@@ -68,6 +68,18 @@ console.log(personaCopia);
 /*Esercizio 9
 Conta il numero di proprietà presenti nell'oggetto "persona" e stampa il conteggio in console.*/
 
+Object.keys(persona).length;
+
 /*Esercizio 10
 Crea un oggetto "libro" con proprietà come "titolo", "autore" e un oggetto annidato "editore" con le proprietà "nome" e "anno".*/
 
+let libro = {
+    titolo : "Harry Potter",
+    autore : "JK Rowling",
+    editore : {
+        nome : "Mondadori",
+        anno : 1998,
+    }
+};
+
+console.log(libro);
