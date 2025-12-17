@@ -2,11 +2,21 @@
 Scrivi una funzione che prenda due parametri, base e altezza, e restituisca l'area del rettangolo corrispondente.
 */
 
+const area_rettangolo =  function (base , altezza) {
+  return base * altezza;
+}
 
+console.log(area_rettangolo(2,5));
 
 /*Esercizio 2
 Scrivi una funzione che prenda un parametro numero e restituisca true se il numero è pari, altrimenti restituisca false.
 */
+
+const numero_pari = function (x) {
+  return x %2 ==0 ? true : false ;
+}
+
+console.log(numero_pari(6));
 
 /*Esercizio 3
 Scrivi una funzione che prenda due parametri di tipo stringa e restituisca la loro concatenazione.
