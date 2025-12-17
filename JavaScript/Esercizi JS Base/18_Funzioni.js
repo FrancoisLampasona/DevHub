@@ -51,6 +51,8 @@ console.log("Il fattoriale di", numero, "è:", fattoriale);
 Scrivi una funzione che generi un numero casuale compreso tra un valore minimo e un valore massimo.
 */
 
+
+
 /*Esercizio 6
 Scrivi una funzione che prenda una parola come parametro e restituisca true se la parola è palindroma, altrimenti restituisca false.
 */
@@ -66,6 +68,24 @@ Scrivi una funzione che prenda un array di numeri come parametro e restituisca u
 /*Esercizio 9
 Scrivi una funzione che prenda una stringa come parametro e restituisca il numero di vocali presenti nella stringa.
 */
+
+function contaVocali(stringa) {
+  const vocali = ["a", "e", "i", "o", "u"];
+  let conteggio = 0;
+
+  for (let carattere of stringa.toLowerCase()) {
+    if (vocali.includes(carattere)) {
+      conteggio++;
+    }
+  }
+
+  return conteggio;
+}
+
+const stringa = "Hello World";
+const numeroVocali = contaVocali(stringa);
+
+console.log("Numero di vocali:", numeroVocali);
 
 /*Esercizio 10
 Scrivi una funzione che prenda un array di numeri come parametro e restituisca la media di tutti gli elementi.*/
