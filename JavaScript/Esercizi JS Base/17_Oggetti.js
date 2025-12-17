@@ -52,11 +52,17 @@ for(x in persona){
 Verifica se l'oggetto "persona" ha la proprietà "sesso" e stampa un messaggio appropriato in console.
 */
 
+console.log("sesso" in persona)
+console.log(persona.hasOwnProperty("sesso"));
+console.log(persona.hasOwn(persona,"sesso"));
 
 /*Esercizio 8
 Crea una copia dell'oggetto "persona" in un nuovo oggetto "personaCopia" e stampa entrambi gli oggetti in console.
 */
 
+let personaCopia = { ...persona };
+console.log(persona);
+console.log(personaCopia);
 
 
 /*Esercizio 9
