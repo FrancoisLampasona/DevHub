@@ -22,9 +22,16 @@ console.log(numero_pari(6));
 Scrivi una funzione che prenda due parametri di tipo stringa e restituisca la loro concatenazione.
 */
 
+const concatena_Str = function (str_1,str_2){
+  return str_1 + " " + str_2
+}
+
+console.log(concatena_Str("ciao", "cane"));
+
 /*Esercizio 4
 Scrivi una funzione che prenda un parametro numero e restituisca il suo fattoriale.
 */
+
 
 /*Esercizio 5
 Scrivi una funzione che generi un numero casuale compreso tra un valore minimo e un valore massimo.
