@@ -70,3 +70,22 @@ Scrivi un programma che prenda una stringa in input e stampi i caratteri della s
 Scrivi un programma che calcoli la somma dei numeri dispari da 1 a 10 utilizzando il ciclo while.*/
 /*Esercizio 10
 Scrivi un programma che prenda un numero in input e verifichi se è un numero primo utilizzando il ciclo do while.*/
+
+let numero_10 = parseInt(prompt("Inserisci un numero_10:"));
+
+let divisore = 1;
+let contaDivisori = 0;
+
+do {
+  if (numero_10 % divisore === 0) {
+    contaDivisori++;
+  }
+  divisore++;
+} while (divisore <= numero_10);
+
+// Un numero_10 primo ha ESATTAMENTE due divisori: 1 e se stesso
+if (contaDivisori === 2) {
+  console.log(numero_10 + " è un numero_10 primo");
+} else {
+  console.log(numero_10 + " NON è un numero_10 primo");
+}
