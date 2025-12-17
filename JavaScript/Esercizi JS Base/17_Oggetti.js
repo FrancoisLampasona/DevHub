@@ -2,33 +2,51 @@
 Crea un oggetto "persona" con le proprietà "nome" e "età".
 */
 
+let persona = {
+    nome : "Francois",
+    eta : 25,
+};
+
+console.log(persona);
 
 /*Esercizio 2
 Accedi alle proprietà "nome" e "età" dell'oggetto "persona" e stampale in console.
 */
+
+console.log(persona.nome);
+console.log(persona.eta);
 
 
 /*Esercizio 3
 Modifica la proprietà "eta" dell'oggetto "persona" e stampa l'oggetto aggiornato in console.
 */
 
+persona.eta = 10;
+console.log(persona.eta)
 
 
 /*Esercizio 4
 Aggiungi una nuova proprietà "sesso" all'oggetto "persona" e stampa l'oggetto aggiornato in console.
 */
 
+persona.sesso = "Maschio";
+console.log(persona.sesso);
+
 
 /*Esercizio 5
 Rimuovi la proprietà "eta" dall'oggetto "persona" e stampa l'oggetto aggiornato in console.
 */
 
-
+delete persona.eta;
+console.log(persona);
 
 /*Esercizio 6
 Itera sulle proprietà di un oggetto "persona" e stampa ogni chiave e valore corrispondente in console.
 */
 
+for(x in persona){
+    console.log(`Chiave ${x} e Valore ${persona[x]}`);
+}
 
 /*Esercizio 7
 Verifica se l'oggetto "persona" ha la proprietà "sesso" e stampa un messaggio appropriato in console.
