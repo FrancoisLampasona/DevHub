@@ -105,8 +105,30 @@ console.log("Il fattoriale di", numero_7, "è:", fattoriale);
 
 /*Esercizio 8
 Scrivi un programma che prenda una stringa in input e stampi i caratteri della stringa al contrario utilizzando il ciclo while.*/
+
+let stringa = "Hello, world!";
+let lunghezza = stringa.length - 1;
+
+while (lunghezza >= 0) {
+  console.log(stringa[lunghezza]);
+  lunghezza--;
+}
+
 /*Esercizio 9
 Scrivi un programma che calcoli la somma dei numeri dispari da 1 a 10 utilizzando il ciclo while.*/
+
+let numero_9 = 1;
+let sommaDispari = 0;
+
+while (numero_9 <= 10) {
+  if (numero_9 % 2 !== 0) {
+    sommaDispari += numero_9;
+  }
+  numero_9++;
+}
+
+console.log("La somma dei numeri dispari è:", sommaDispari);
+
 /*Esercizio 10
 Scrivi un programma che prenda un numero in input e verifichi se è un numero primo utilizzando il ciclo do while.*/
 
