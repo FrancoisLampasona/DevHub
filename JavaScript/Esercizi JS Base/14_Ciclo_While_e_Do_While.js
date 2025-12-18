@@ -62,8 +62,47 @@ do {
 
 /*Esercizio 6
 Scrivi un programma che prenda un numero in input e conti il numero di cifre pari presenti utilizzando il ciclo while.*/
+// Chiediamo il numero all'utente
+
+let numero_6 = 12345;
+let countPari = 0;
+
+// Rendiamo il numero positivo (nel caso sia negativo)
+numero_6 = Math.abs(numero_6);
+
+// Caso speciale: se il numero_6 è 0
+if (numero_6 === 0) {
+  countPari = 1; // 0 è una cifra pari
+} else {
+  while (numero_6 > 0) {
+    let cifra = numero_6 % 10;
+
+    if (cifra % 2 === 0) {
+      countPari++;
+    }
+
+    numero_6 = Math.floor(numero_6 / 10);
+  }
+}
+
+console.log("Numero di cifre pari:", countPari);
+
+
 /*Esercizio 7
 Scrivi un programma che prenda un numero in input e calcoli il suo fattoriale utilizzando il ciclo do...while.*/
+
+let numero_7 = 5;
+let fattoriale = 1;
+let i = 1;
+
+do {
+  fattoriale *= i;
+  i++;
+} while (i <= numero_7);
+
+console.log("Il fattoriale di", numero_7, "è:", fattoriale);
+
+
 /*Esercizio 8
 Scrivi un programma che prenda una stringa in input e stampi i caratteri della stringa al contrario utilizzando il ciclo while.*/
 /*Esercizio 9
