@@ -49,6 +49,17 @@ Utilizzare un callback per filtrare gli elementi di un array:*/
 Utilizzare un callback per calcolare la somma degli elementi di un array:*/
 /*Esercizio 8
 Utilizzare un callback per mappare gli elementi di un array a nuovi valori:*/
+
+const numeri = [1, 2, 3, 4, 5];
+
+function raddoppia(numero) {
+  return numero * 2;
+}
+
+const numeriRaddoppiati = numeri.map(raddoppia);
+
+console.log(numeriRaddoppiati);
+
 /*Esercizio 9
 Utilizzare un callback per eseguire un'azione su ogni carattere di una stringa:*/
 
