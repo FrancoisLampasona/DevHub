@@ -12,10 +12,11 @@ while (numero <= 5) {
 Scrivi un programma che calcoli la somma dei numeri da 1 a 10 utilizzando il ciclo while.*/
 
 let somma = 0;
+let contatore_2 = 1;
 
-while (numero <= 10) {
-  somma += numero;
-  numero++;
+while (contatore_2 <= 10) {
+  somma += contatore_2;
+  contatore_2++;
 }
 
 console.log("La somma è:", somma);
@@ -23,12 +24,14 @@ console.log("La somma è:", somma);
 /*Esercizio 3
 Scrivi un programma che stampi i numeri pari da 2 a 10 utilizzando il ciclo do while.*/
 
-numero = 2;
+let numero_3 = 2;
 
-while (numero<=10){
-    console.log(numero % 2 == 0 ? numero : "\t");
-    numero++;
-}
+do {
+  if (numero_3 % 2 === 0) {
+    console.log(numero_3);
+  }
+  numero_3++;
+} while (numero_3 <= 10);
 
 /*Esercizio 4
 Scrivi un programma che prenda un numero in input e conti il numero di cifre presenti utilizzando il ciclo while.*/
@@ -55,38 +58,33 @@ console.log(numero2);
 
 do {
   risultato = numero1 + numero2;
+
+  if (risultato > 100) break;
+
   console.log(risultato);
   numero1 = numero2;
   numero2 = risultato;
-} while (risultato <= 100);
+} while (true);
 
 /*Esercizio 6
 Scrivi un programma che prenda un numero in input e conti il numero di cifre pari presenti utilizzando il ciclo while.*/
-// Chiediamo il numero all'utente
 
-let numero_6 = 12345;
-let countPari = 0;
+let numero_6 = 1458;
+let appoggio;
+let contatore = 0;
 
-// Rendiamo il numero positivo (nel caso sia negativo)
-numero_6 = Math.abs(numero_6);
+while (numero_6 !== 0) {
+  appoggio = numero_6 % 10;
 
-// Caso speciale: se il numero_6 è 0
-if (numero_6 === 0) {
-  countPari = 1; // 0 è una cifra pari
-} else {
-  while (numero_6 > 0) {
-    let cifra = numero_6 % 10;
-
-    if (cifra % 2 === 0) {
-      countPari++;
-    }
-
-    numero_6 = Math.floor(numero_6 / 10);
+  if (appoggio % 2 === 0) {
+    contatore++;
+    console.log(`${appoggio} è pari`);
   }
+
+  numero_6 = Math.floor(numero_6 / 10);
 }
 
-console.log("Numero di cifre pari:", countPari);
-
+console.log("Cifre pari totali:", contatore);
 
 /*Esercizio 7
 Scrivi un programma che prenda un numero in input e calcoli il suo fattoriale utilizzando il ciclo do...while.*/
@@ -102,15 +100,14 @@ do {
 
 console.log("Il fattoriale di", numero_7, "è:", fattoriale);
 
-
 /*Esercizio 8
 Scrivi un programma che prenda una stringa in input e stampi i caratteri della stringa al contrario utilizzando il ciclo while.*/
 
-let stringa = "Hello, world!";
-let lunghezza = stringa.length - 1;
+let stringa_8 = "Hello, world!";
+let lunghezza = stringa_8.length - 1;
 
 while (lunghezza >= 0) {
-  console.log(stringa[lunghezza]);
+  console.log(stringa_8[lunghezza]);
   lunghezza--;
 }
 
@@ -132,21 +129,24 @@ console.log("La somma dei numeri dispari è:", sommaDispari);
 /*Esercizio 10
 Scrivi un programma che prenda un numero in input e verifichi se è un numero primo utilizzando il ciclo do while.*/
 
-let numero_10 = parseInt(prompt("Inserisci un numero_10:"));
+let numero_10 = 17;
+let divisore = 2;
+let primo = true;
 
-let divisore = 1;
-let contaDivisori = 0;
-
-do {
-  if (numero_10 % divisore === 0) {
-    contaDivisori++;
-  }
-  divisore++;
-} while (divisore <= numero_10);
-
-// Un numero_10 primo ha ESATTAMENTE due divisori: 1 e se stesso
-if (contaDivisori === 2) {
-  console.log(numero_10 + " è un numero_10 primo");
+if (numero_10 < 2) {
+  primo = false;
 } else {
-  console.log(numero_10 + " NON è un numero_10 primo");
+  do {
+    if (numero_10 % divisore === 0) {
+      primo = false;
+      break;
+    }
+    divisore++;
+  } while (divisore < numero_10);
+}
+
+if (primo) {
+  console.log(numero_10, "è un numero primo.");
+} else {
+  console.log(numero_10, "non è un numero primo.");
 }
