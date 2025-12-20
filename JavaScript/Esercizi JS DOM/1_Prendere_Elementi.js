@@ -2,39 +2,38 @@
 Ottenere un elemento per ID e stamparne il contenuto.
 */
 
+const recuperaDati = async () => {
+  const recupero_dati = await fetch(
+    "https://jsonplaceholder.typicode.com/posts/1"
+  );
+  const dati = await recupero_dati.json();
+  console.log(dati);
+};
 
+recuperaDati();
 
 /*Esercizio 2
 Ottenere un elemento per classe e modificare il suo stile.
 */
 
-
-
-
 /*Esercizio 3
 Ottenere elementi per tag e aggiungere loro una classe.
 */
-
 
 /*Esercizio 4
 Ottenere un elemento utilizzando un selettore CSS e modificare il suo testo.
 */
 
-
 /*Esercizio 5
 Ottenere tutti gli elementi che corrispondono a un selettore CSS e nasconderli.
 */
-
-
 
 /*Esercizio 6
 Ottenere il valore di un input di testo.
 */
 
-
 /*Esercizio 7
 Ottenere il valore selezionato di un elemento select.*/
-
 
 /*Esercizio 8
 Ottenere il valore di un elemento checkbox.
